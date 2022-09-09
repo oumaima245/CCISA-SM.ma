@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+	padding: 40px 40px;
+}
+/*hoooooooooooooooooome*/
+ .Home{
+background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/OIP.jpeg) center/cover no-repeat;
+height:100vh;
+animation: change 30s infinite ease-in-out;
+}
+@keyframes change {
+  0%{
+    background:linear-gradient(rgba(0, 0, 0, 0.5)rgb(151, 248, 232)), url(./images/OIP.jpeg) center/cover no-repeat;
+  }
+  10%{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20270407.jpg) center/cover no-repeat;
+  }
+  20%{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20220616_090122402.jpg) center/cover no-repeat;
+  }
+40%{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20270407.jpg) center/cover no-repeat;
+  }
+  50%{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20220616_090056744-01.jpeg) center/cover no-repeat;
+  }
+  60%{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20220616_090049651.jpg) center/cover no-repeat;
+  }
+70%{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20220616_090056744-01.jpeg) center/cover no-repeat;
+}
+80%{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/2019-01-18.jpg) center/cover no-repeat;
+}
+90%{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20270407.jpg) center/cover no-repeat;
+}
+100%{
+  background:linear-gradient(rgba(0, 0, 0, 0.5),rgb(151, 248, 232)), url(./images/20220620_104522705.jpg) center/cover no-repeat;
+}
+}
+
+/* modifier logo de page*/
+.logo{
+  position:fixed;  
+}
+.logo img{
+ width: 45px;
+ position:fixed;
+ top: 5px;
+ left:10px;
+ border-radius: 30%;
+ opacity: 0.8;
+} 
+.name_logo{
+  position: fixed;
+  top: 15px;
+  left:65px;
+  font-size : 1.4em;
+  font-weight: 900;
+  color:rgb(48, 9, 78);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+  
+/*tiiiiiiiiiitle1*/
+.log{
+  text-align:center;
+  color:aqua;
+  padding-top: 200px;
+}
+.log h1{
+  font-size: 35px;
+  font-family:'Lobster',cursive;
+}
+.log h3{
+  font-size: 25px;
+  font-family: 'Lobster',cursive;
+
+}
+/*button*/
+.but {
+  text-align: center;
+  margin-top:20px ;
+}
+.but a{
+  width:150px;
+  font-weight: 1.2em;
+  text-decoration: none;
+  display:inline-table;
+  margin: 0 20px;
+  position:relative;
+  font-weight: 500;
+  padding: 11px 2px ;
+  border:1px solid rgb(48, 9, 78);
+  color:aqua;
+  z-index: 2;
+  transition:color 0.8s ease-in-out;
+}
+.but span{
+   width:0;
+   height: 100%;
+  background:rgb(48, 9, 78);
+  position: absolute;
+top: 0;
+left: 0;
+z-index: -8;
+transition: 0.8s ease-in;
+}
+.but a:hover  span{
+  width: 100%;
+}
+.but a:hover  {
+  color:rgb(247, 201, 169);
+}
+/*looogo*/
+
+.logo_bar{
+   position: fixed;
+   display: flex;
+   flex-direction:row;
+   justify-content: space-between;
+}
+.logo_bar {
+  top:23px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  padding: 0 10px;
+}
+.logo_bar .bar{
+  background-color:rgb(247, 212, 187);
+  height: 4px;
+  width:20%;
+  border-radius:50px ;
+}
+/*mennnnnnnu*/
+.sidebar{
+  width: 250px;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background: rgba(48, 9, 78,50%);
+  z-index: 2;
+  transition: 0.7s ease-in;
+}
+nav ul li{
+  font-weight: 400;
+  list-style: none;
+  margin:50px 30px ;
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgba(247, 201, 169,50%);
+}
+nav ul li a:hover{
+  color: aqua;
+}
+.btn-menu{
+  width: 45px;
+  height: 50px;
+  background: rgb(48, 9, 78);
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 35px;
+  border-radius: 15px;
+  z-index: 3;
+  color: rgb(250, 231, 217);
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+  transition: 0.6s ease-in;
+  cursor: pointer;
+}
+@media screen and (max-width: 770px){
+  .log h3{
+    font-size: 20px;
+  }
+  .log a{
+    font-size: 12px;
+  }
+  .sidebar{
+    background: rgb(48, 9, 78);
+    width: 210px;
+}
+  .logo img{
+    width: 40px; 
+    top: 10px;
+   } 
+   .name_logo{
+    top: 18px;
+    left: 55px;
+    font-size : 1.2em;
+    font-weight: 800;
+    }
+    nav ul li{
+      font-weight: 200; 
+      margin:40px 30px;
+    }
+}
+/*end page1*/
+/*page2*/
+/*************cards************/
+#page2{
+  padding: 100px 80px;
+}
+.card{
+	margin: auto;
+	background: #ffffff;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(15, 15, 15, 0.1), 1px 2px 6px aqua;
+	width: 500px;
+	height:455px;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	padding:30px;
+  left:25%;
+  top: -5px;
+  background-color: rgba(40, 243, 216, 0.1);
+}
+.card{ 
+  display: inline-block;
+  margin-right: 20px;
+}
+.part2{
+  position: absolute;
+  top: 85%;
+  left: 46px;
+}
+	.card-toggle {
+		z-index: 0;
+		position: relative;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		display: block;
+		text-align: center;
+		line-height: 1.8;
+		font-size: 24px;
+		cursor: pointer;
+		border: 2px solid  rgb(52, 12, 83);; 
+	}
+	.card-content{
+		position: absolute;
+		left: 0;
+		top: 20px;padding: 100px 0 0;
+		border-radius: 5px;			
+	}
+  /*edit text card*/
+  .card h2 {
+  text-align: center;
+  color: rgb(52, 14, 82);
+  }
+  .card p{
+    font-family: cursive;
+    font-size: 16px;
+    margin: 5px;
+    margin-inline-start: 2px;
+    margin-inline-end: 1px;
+    padding-inline-start: 15px;
+    padding-inline-end: 1px ;  
+  }
+  .card button{
+    color: rgb(52, 12, 83);
+  }
+@media screen and (max-width: 770px){
+  .card{
+    height: 500px;
+    width: 400px; 
+    left: 0%;     
+  }
+}
+/*end page2*/
+/******page 3********/
+#event{
+  padding: 100px 80px;
+}
+.events{
+  text-align: center;
+  position: relative;
+  top: -60px;
+  font-size: 1.2em;
+  color: aqua;
+  text-decoration:underline;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+.center{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-evenly;
+  margin-bottom: 10px;
+}
+/* Top Half of card, image. */
+
+.property-card
+{
+  height:18em;
+  width:14em;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:  15px 15px 27px #e0fafa, -15px -15px 27px #ffffff;
+
+}
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+/* Bottom Card Section */
+/* Social Icons */
+.property-description
+{
+  background-color: rgb(52, 12, 83);
+  color: rgb(247, 201, 169);
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.6em 1em;
+  text-align:center;
+}
+.property-card h5{
+  color: aqua;
+  font-size: 0.7em;
+  font-family:sans-serif;
+
+}
+.property-card p{line-height: 23px;
+  font-size: 0.9em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Property Cards Hover States */
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+/*end page3 events*/
+/* page 3 paaaaage public*/
+.pub {
+  position:relative ;
+  background-color: darkblue;
+}
+.pub .part1 img{
+  
+  top: -5px;
+  width: 28%;  
+  border-radius: 20%;
+}
+.p2{         
+  position: relative;
+  top:-210px;
+  padding:30px;
+}
+.pub p{
+  font-size:0.8em; 
+  font-weight: 200;
+  line-height: 18px;
+}
+@media screen and (max-width: 770px){
+     .part1 img{
+       display:contents;
+       top: 0;
+       left: 0;
+       width: 25px;
+     }
+     .p2  {
+       top: 0;
+       height: 0;
+       padding: 0;
+    }
+    .a1{
+      top: 0;
+    }
+    .a2{
+      top: 14em;
+    }
+    .a3{
+      top: 20em;
+    }
+}
+
+/*end public*/
+/*page logo*/
+
+
+@media screen and (max-width: 770px){
+  #logo_ccis{
+    display: none;
+    
+  }.span{
+      display: none;
+    } 
+}
+
+/*end page logo*/
+/* pagee 4 */
+#photo .pics{
+  padding: 40px;
+flex-direction: column-reverse;
+}
+img{
+  border-radius: 10%;
+  
+}.pics img{
+  border-radius: 10%;
+  filter: blur(3px);
+  transition: 0.3s ease-out;
+}
+ img:hover{
+  filter: blur(0);
+  height: 30%;
+
+}
+/*end page4*/
+/*page de contact*/
+#contact{
+  padding: 110px 50px;
+}
+
+.title_contact{
+  text-align: center;
+  position: relative;
+  top: -80px;
+  font-size: 1.4em;
+  color: aqua;
+}
+.contact{
+  background-color:rgb(20, 0, 65);
+  color:rgb(247, 201, 169);
+}/*loooooogin right*/
+#login{
+  width:320px;
+	height:340px;
+	position:absolute;
+  left: 55%;
+	margin:1% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+  overflow: hidden;
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10%;
+  z-index: 5;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.box{
+  text-align: right;
+}
+/*loggiiiiiiiiiiiin */
+#login i{
+  color: #bbb;
+}
+h3{
+  font-size: 35px;
+  margin: 15px;
+}
+.name{
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.name i{
+  position: absolute;
+  top: 50%;
+  left: 39px;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: #bbb;
+}
+.name input{
+  width: 90%;
+  padding: 4px 30px;
+  border: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 50px;
+}
+.name input::placeholder{
+  color: #bbb;
+  font-weight: 600;
+  position: relative;
+  left: 10%;
+}
+.email{
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.email i{
+  position: absolute;
+  top: 50%;
+  left: 39px;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: #bbb;
+}
+.email input{
+  width: 90%;
+  padding: 4px 30px;
+  border: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 40px;
+}
+.email input::placeholder{
+  color: #bbb;
+  font-weight: 600;
+  position: relative;
+  left: 10%;
+}
+.message-box{
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.message-box i{
+  position: absolute;
+  top: 11%;
+  left: 40px;
+  transform: translateY(-50%);
+  font-size: 19px;
+  color: #bbb;
+}
+.message-box textarea{
+  width: 90%;
+  padding: 4px 30px;
+  border: none;
+  font-size: 18px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+.message-box textarea::placeholder{
+  color: #bbb;
+  font-weight: 600;
+  position: relative;
+  left: 10%;
+}
+
+.button{
+  width: 50%;
+  cursor: pointer;
+  margin-bottom: 40px;
+  z-index: -5;
+}
+.button button{
+  width: 80%;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  background-color: aqua;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position:relative;
+  left: 50%;
+}
+.message{
+  width: 100%;
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+@keyframes buttons{
+  0%{
+      transform: scale(0.1);
+  }
+  50%{
+      transform: scale(0.5);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
+/*leeeeeeft*/
+.info{
+  text-align: left;
+  position: relative;
+  top: 55px;
+} 
+
+.HR p{
+  font-size: 0.7em;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+  left: 19px;
+}
+.info h3{
+  font-size: 0.7em;
+  position: relative;
+}
+/*end contact*/
+/*e_contact*/
+.e_contact i{
+  padding: 12px 10px;
+  border: 1px solid rgb(247, 201, 169);
+border-radius: 50%;
+color: rgb(52, 12, 83);
+margin: 60px 2px 0 30px ;
+}
+.e_contact a{
+  text-decoration: none;
+  
+}
+.e_contact i:hover{
+  background-color: rgb(247, 201, 169);
+color: aqua
+}
+/*icon de rotour*/
+.fix_icon {
+  width: 40px;
+  height: 45px;
+  background: rgb(20, 0, 65);
+  align-items: center;
+  top:565px;
+  position: fixed;
+  right: 35px;
+  border-radius: 15px;
+  z-index: 3;
+  font-size: 1.6rem;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
+.fix_icon a{
+  color: rgb(250, 231, 217);
+
+  text-decoration: none;
+}

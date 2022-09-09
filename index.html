@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="./images/1.png" type="image/x-icon" />  
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>CCIS-Agadir</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+</head>
+<body>
+    <section class="Home" id="Home">
+        <div class="logo">
+            <img src="./images/1.png" >
+            <div class="name_logo"> CCISA</div>
+        </div>
+        <div class="log">
+        <h1 class="title1"> غرفة التجارة والصناعة والخدمات أكادير</h1> 
+        <h3 class="title2"> Chambre de commerce, d'industrie et des services d'Agadir</h3>
+            <div class="but">
+                <a href="#page2"> 
+                <span class="pre"></span>présenter 
+                </a>
+            <a href="http://www.ccis-agadir.com/index.php?page=presentation">
+                <span class="plu"></span>voir plus
+            </a>
+        </div>
+    </div>
+    </section>
+    <div  class="sidebar">
+        <nav>
+            <ul> 
+                  <li>
+                    <a href="#event">
+                        <i class='bx bx-calendar'></i>              <span>Evénments</span>
+                    </a>
+                  </li><li>
+                    <a href="#public">
+                        <i class='bx bx-task'></i>              <span>Publication</span>
+                    </a>
+                 </li>
+                 <li>
+                    <a href="#photo">
+                        <i class='bx bxs-photo-album'></i>     <span> Photothèque </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact">
+                        <i class='bx bx-chat'></i>              <span>Contact</span>
+                    </a>
+                  </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="btn-menu">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </div>
+    <script type="text/javascript">
+        document.querySelector('.fa-times').style.display="none"
+        const menuBtn =document.querySelector(".btn-menu")
+        const sidebar =document.querySelector(".sidebar")
+menuBtn.onclick=function(){
+        if(sidebar.style.right=="-250px"){
+sidebar.style.right="0"
+document.querySelector('.fa-times').style.display=""
+document.querySelector('.fa-bars').style.display="none"}
+else{
+    sidebar.style.right="-250px"
+    document.querySelector('.fa-times').style.display="none"
+document.querySelector('.fa-bars').style.display=""
+}
+}
+
+</script>
+    <section id="page2">
+        <!--card p1-->
+    <div class="card" >
+        <div  id="show">
+            <h2 >
+                Présentation
+            </h2><br> <br> 
+            <p style="line-height: 30px">la Chambre de Commerce, d’Industrie et de Services de Souss Massa « CCISSM »,
+                 Chambre professionnelle est un organisme public chargé de représenter, 
+                 défendre et développer les intérêts de l’ensemble des entreprises patentées, 
+                 sises dans  sa circonscription territoriale qui s’étend sur une superficie de 52.064 km2,
+                  et englobe plus de 64000 entreprises.</p>
+        </div>
+        <div class="part2">
+         <button id="button" class="card-toggle" >+ </button>
+        </div>
+        <!--card p2-->
+        <div  id="show1" style="display: none" >
+            <h2 >
+                La CCISSM à votre service</h2><br><br> 
+            <p style="line-height: 35px">important réseau d’entreprises, force de proposition et interlocuteur privilégiés des industriels , commerçants et prestataires de services auprès des pouvoirs publics, œuvre via ses conseils, ses avis, ses propositions et ses aides et déploie des efforts considérables pour accomplir ses missions et répondre à vos attentes. </p>
+        </div>
+        <div class="part2" style="left: 150px">
+         <button id="button1" class="card-toggle">+</button>
+        </div>
+        <!--card p3-->
+        <div  id="show2" style="display:none">
+            <h2 style="line-height: 35px">Les élus</h2><br><br> 
+            <p> 61 membres élus <br><br>
+                -Commerce     : 29 élus <br><br>
+                -Industrie    : 15 élus <br><br>
+                -Services     : 17 élus</p>
+        </div>
+        <div class="part2" style="left:250px">
+         <button id="button2" class="card-toggle">+ </button>
+        </div></div>
+    </section>
+    <script>
+
+        $( "#button" ).click(function() {
+            $("#show1").hide();
+            $("#show2").hide();
+          $("#show").show( "slow" );
+          $(".card").css("background-color", "rgba(40, 243, 216, 0.1)");
+        });
+        $( "#button1" ).click(function() {
+            $( "#show" ).hide();
+            $( "#show2" ).hide();
+          $( "#show1" ).show( "slow" );
+          $(".card").css("background-color", "rgba(40, 243, 216, 0.1)");
+
+        });
+        $( "#button2" ).click(function() {
+            $( "#show" ).hide();
+            $( "#show1" ).hide();
+            $( "#show2" ).show( "slow" );
+            $(".card").css("background-color", "rgba(40, 243, 216, 0.1)");
+        }); 
+    </script>
+        <!--events-->
+        <section id="event">
+        <div class="events" >
+            <h1>Evénements !</h1>
+        </div>
+        <div class="center">
+            <div class="property-card">
+                   <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/awrach.jpeg');">
+                  </div>
+                <div class="property-description">
+                  <h5> Mercredi 20 Avril 2022 </h5><br>
+                  <p>Journée d'information sur le programme Aourache.
+                </p>
+                </div>
+              </div>
+              <div class="property-card">
+                <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/dgcnss2022.jpeg');">
+               </div>
+             <div class="property-description">
+               <h5> Mardi 17 Mai 2022 </h5><br>
+               <p>Journée d'information sur le programme FORSA.
+
+             </p>
+             </div>
+           </div>
+           <div class="property-card">
+            <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/30mars2022.jpeg');">
+           </div>
+         <div class="property-description">
+           <h5> Mercredi 30 Mars 2022</h5><br>
+           <p>Ateliers de réflexion sur l'amélioration des processus de gestion et d'exploitation du port d'Agadir.
+         </p>
+         </div>
+       </div>
+            <div class="property-card">
+                <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/bmmini.jpg');">
+                </div>
+              <div class="property-description">
+                <h5> Jeudi 19 Mai 2022  </h5><br>
+                <p>Journée d'information sur la centralisation des chèques irré guliers.</p>
+              </div>
+            </div>
+            <div class="property-card">
+                  <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/minconsule.jpg');">
+                  </div>
+                <div class="property-description">
+                  <h5> vendredi 22 Octobre 2021 </h5><br>
+                  <p>Les consuls honoraires à Agadir des relais de la diplomatie économique.
+                </p>
+                </div>
+                </div>
+          
+          <div class="property-card">
+              <div class="property-image" style="background-image: url('http://www.ccis-agadir.com/images/evenements/citinov.jpg')">
+              </div>
+            <div class="property-description">
+              <h5>Vendredi 06 mars 2020</h5><br>
+              <p>Réception à la Cité de l'Innovation.</p>
+            </div>
+          </div>
+    </div>
+</section><!--end events-->
+<section id="public" style="clear : both; display: table;"><!--public-->
+    <div class="events" >
+        <h1>Publication!</h1> 
+        </div>
+        <div>
+    <div class = "raspberry">
+        <img src="https://scontent.frak2-2.fna.fbcdn.net/v/t1.6435-9/143184855_3462064693891998_5375427108851994573_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeG5xmnsK7fZck0PXBi9gtcMSupXHIz0WgxK6lccjPRaDF3gb1YF-Q3BT-Be2VncH94k6cMjXiSxONc5hP8reTvy&_nc_ohc=UpVzXGGn-JAAX_4NgAJ&_nc_ht=scontent.frak2-2.fna&oh=00_AT9MXwiLmOStRQADhfYUDS3kPKICDVzvZqeSfDV3Qw3QZg&oe=6335D9C4" width="20%" height="15%" />
+        <p > plus info!</p>
+    </div>
+    <div class = "raspberry">
+        <img src="https://scontent.frak2-2.fna.fbcdn.net/v/t39.30808-6/283891868_321669456790744_2652584625068109063_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHBfVlBSmUoV1jFHzjcWqgERH6TGtXKfwtEfpMa1cp_C4v4TRMh1R1UumOpal-9cNZMsdaisgYnL3ahnGb7c-Td&_nc_ohc=jK_FYOUl2u0AX_b9SbQ&_nc_ht=scontent.frak2-2.fna&oh=00_AT8I4L-gEfMe6LYCE_k7pHiuHQrmGficx2stJVmsgYW0VQ&oe=6314EA81" width="20%" height="15%" />
+        <p>plus info!</p>
+    </div>
+    <div class = "raspberry">
+        <img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/284001927_322274673396889_1895154934182910548_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFixnTf5LUr_izlIwhOKOZE20desHSTmmvbR16wdJOaa7btoGMxGSwG6KPncDRcbRaAC9bZHMesP-L2QDLx9Yej&_nc_ohc=QfyK2fnsNpMAX8Rqb_n&_nc_ht=scontent.frak1-2.fna&oh=00_AT_skXVTRFUNVT-w19qsP7iVGHdvMuo4OX74OKVIBKJ2QA&oe=6316EA6B" left="50%" width="20%" height="15%" />
+        <p>plus info!</p>
+    </div>
+</div>
+</section><!--end public-->
+
+<section id="photo" ><!--photo-->
+    <div class="events" >
+        <h1>Photothèque!</h1>
+    </div>
+    <div class="pics" style="top: -100em;">
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/283718947_321521710138852_8170264037085275195_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeHqJOsV7w3zus9YTDzcWTmm9hdEt7nOYxL2F0S3uc5jEqIY0LxkpzJ86MCUFWlLl-8UIdIgK7EiKa1lYKWaoq2r&_nc_ohc=WnWjVesk5WcAX_CAZGj&tn=NhAT1EeMfd_WoTHh&_nc_ht=scontent.frak1-2.fna&oh=00_AT_XVpHZQ9DhbwtJVKYHBiDTXFqdWms7hv--Y8wu-VbE4w&oe=6315F152" >
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/283794954_321436523480704_3540261143502351527_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFSMvGF2CZFYUw9GDVMpSvnt8VZH1XO4X63xVkfVc7hfgWYX7-J-nJoTV93dmirP3sfqpPAE0ibnkeLn16kYYwi&_nc_ohc=7MnH6Gxc-MwAX_vfHCo&tn=NhAT1EeMfd_WoTHh&_nc_ht=scontent.frak1-2.fna&oh=00_AT_bgRb4-B3cWOsG01BENCpJYjkbGKVBy4r9W3gB8ZYwCQ&oe=63161D12" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/283014197_317735697184120_5329320009650187179_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEff6DCkYKCiUqb7IovQj0mk4LCpcuXwpCTgsKly5fCkF1F-T1XeUxHM8doNtbxXcpnhYOWZussZHB2dos1I2EY&_nc_ohc=CbsSM06hUTMAX-jDpMx&_nc_ht=scontent.frak1-1.fna&oh=00_AT8KDwIg5pw4MKTJLJwqp6mN6uibCJH39JzSCX3oqsGNyA&oe=63158567  " >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/277527150_286263970331293_7488627449502028509_n.jpg?stp=dst-jpg_p206x206&_nc_cat=106&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGjtXKzPQRV6T9nYfF0bzctxPApilHQBaDE8CmKUdAFoILZxf6_fjJsfXLadDrLGYBcN_KmyrNJmVVH8NK-A4Vw&_nc_ohc=CWZFolzdLHAAX-zxY25&_nc_ht=scontent.frak1-1.fna&oh=00_AT8hUMlKuV5YGpHj17EChRI96sVXZAU7t5333WzR9260zQ&oe=63152213" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/277461881_285584160399274_5420590110002358852_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEYUiiLbrcSwKBIpn9swiHIW3o6WoDItiBbejpagMi2IEnvlIUyhsKZCCO7Q5NSa3ZOweAO_jlu-u-2HJ4dcDdv&_nc_ohc=Y_KfDJEjQ_8AX8d00RC&_nc_ht=scontent.frak1-1.fna&oh=00_AT-N_7515ABfKYlr8SpNSkoLZfLLbMSfGUPuQG4fjbnPGQ&oe=63167DE6" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/276155029_282129054078118_5889981320930214880_n.jpg?stp=dst-jpg_p206x206&_nc_cat=101&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFpv_tIVb3yY28gmKU22e9iouXfeNKww_ui5d940rDD-9QNCVqsdovv3JHsc6j9ukYue7yBgSxnTKCfpH0EI_Ff&_nc_ohc=W_KYVFchbvgAX8iR1I3&tn=NhAT1EeMfd_WoTHh&_nc_ht=scontent.frak1-1.fna&oh=00_AT8rbhTx26ojNXmQLOE_tJ56WgUrSTnjTNCCKTLtXY3U_Q&oe=6315925E" >
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/275289877_281189950838695_3338673621896638952_n.jpg?stp=dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEcwYmiJzKGzdGVrjbWOClw9K7xt6vNOh30rvG3q806HZtx7H4cfMFrmoospt3ZlAvbrbVZIak5ov_RpMI-q0XT&_nc_ohc=TIMgSAstp8QAX8Mb6vD&tn=NhAT1EeMfd_WoTHh&_nc_ht=scontent.frak1-2.fna&oh=00_AT8wh0ByjUa2GPf1LtucxzVHqKZb87HAlOVnF1p2CEQHDw&oe=6315FAFC" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/274609175_266052102352480_6717215225422033224_n.jpg?stp=dst-jpg_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeESZ0pTpatGPtOjZxrntUlpHL_SvNTQV3Icv9K81NBXcpMv7m0E0OnayIQjPtgKCaClA92KWD5L82zJ4fjHYasI&_nc_ohc=-WOJttFd4z8AX8I4zwH&_nc_ht=scontent.frak1-1.fna&oh=00_AT8wK_n4GCYcwT7pXfKKTyru-j5zvmhDAIof0CiCH2wQ7g&oe=6315563C" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/274027658_257684296522594_5527455817723155113_n.jpg?stp=dst-jpg_p206x206&_nc_cat=105&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGKllnutnpQBlJ3l-82ctmj-QHtPAZTQkv5Ae08BlNCS9Kp7_qP1OpRhq3XMuVogOIGr8J-ggV7i21iXOGV66MZ&_nc_ohc=GZB--sJ_8DcAX_PzmRG&_nc_ht=scontent.frak1-1.fna&oh=00_AT_mn8dOFxS19iB9YrUd04-QeMDZlfWIN5LJhWANk7Phrg&oe=6315DE66" >
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/274398120_257453436545680_387288572990928080_n.jpg?stp=dst-jpg_p206x206&_nc_cat=109&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeED1lMsYta2XZdUHGmcoGMaeoIGq70NsSB6ggarvQ2xIMobTdpDtKY-r7mm8uF5DUnwA_6T1fuE7EwRta9RmePo&_nc_ohc=OJTnbf8u-BYAX8H8OBC&_nc_ht=scontent.frak1-2.fna&oh=00_AT9Gxq_Z7OS1b-7OpMR5vwGGSOl6ogp3OlDUPtBkrWl3Xg&oe=63169B5A" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/272928886_244242501200107_755462845340084090_n.jpg?stp=c52.0.206.206a_dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeEC8DXs3ak9PqAMXuq071S4SOAXHKJ-ssBI4Bccon6ywGiH1YM-LIb3vUezTlrwbwi4XQtvw_ZSILZPtOJwJmEo&_nc_ohc=iYpG2wO1A48AX_9pKL-&_nc_ht=scontent.frak1-1.fna&oh=00_AT_t-HOrCsnpMGeTkFagl5t_v9P_R3bJT8JHHEz9rphf9Q&oe=631644A8" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/287521478_332910328999990_2798259128982562366_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeFB2K3MMHI6WWtpJUXCkgWjA9FnX8t5SNoD0Wdfy3lI2nOerNVERlPVPqlgIzdoaRZg-QHSLO4fVp8OsD4TSiW8&_nc_ohc=p4birdPp_WIAX9IiV73&_nc_ht=scontent.frak1-1.fna&oh=00_AT_tBDDTW8TX37Swz2dv2hjOhsFtVyPHQfXHof8MF-GH7A&oe=6316B202" >
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/289766719_340052834952406_6815059578692628220_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=107&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeHyFd6mQpChZQUWd5zzWjccxSxGQsQHNnXFLEZCxAc2daQNs0vYWYWmlCQI3ttpWCha1AFvc_lGAhuz26n7rude&_nc_ohc=Od0VeE9fPosAX-PCrd5&_nc_oc=AQmiDdQH9vhsRw8Vn3eBsSoAlpHsJrtK_iabvbeOtWjC1MogXXJ_FKMeQ4tJ6wCIFHk&_nc_ht=scontent.frak1-2.fna&oh=00_AT_4MxHXSGq7BBfcL0YuurN-uHwdE142J-34tbzf9WrARQ&oe=6316239B" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/274178843_257420706548953_2817731170044743096_n.jpg?stp=dst-jpg_p206x206&_nc_cat=108&ccb=1-7&_nc_sid=da31f3&_nc_ohc=AMGX47fOQ0cAX8-8bGp&_nc_ht=scontent.frak1-1.fna&oh=00_AT82KyRCUpVRVp3qETMOBtAO7sSZDnUtczjbRRVbZcqRQg&oe=62C92728" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/271448169_227683582855999_3652851620879366372_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=da31f3&_nc_ohc=udtz_XMbnjMAX9cwWU2&_nc_oc=AQkVGVQm8hfj4_j28u-0Mxw0naS6uCoHvHLMUurJTwJ5L8V-KmrOjwK0G2QlpD1gAzU&tn=-EBxHd5mLBkN1ds6&_nc_ht=scontent.frak1-1.fna&oh=00_AT--4w8BxpHRGmYPkdUP84n5vZupzb-bRl4O8y_6RCDXwA&oe=62C8A760" >
+<img src="https://scontent.frak1-2.fna.fbcdn.net/v/t39.30808-6/265356952_208695418088149_6706847375132386176_n.jpg?stp=c34.0.206.206a_dst-jpg_p206x206&_nc_cat=102&ccb=1-7&_nc_sid=da31f3&_nc_ohc=EUVD59uSpsIAX-k7Dxx&_nc_ht=scontent.frak1-2.fna&oh=00_AT9IO64ZlCjO3g9zKDoFOE_W5JUH2zQ6A6c2YiQ7bk5xmA&oe=62C91546" >
+<img src="https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/248237829_4232819946816465_1072141642226601888_n.jpg?stp=c85.0.206.206a_dst-jpg_p206x206&_nc_cat=103&ccb=1-7&_nc_sid=da31f3&_nc_ohc=sG93ntq6_CQAX8Gk9Iv&_nc_ht=scontent.frak1-1.fna&oh=00_AT-QEot-OtpUN7dHlbejkI3bUf8kjVlEQ53W2ejkk0opsQ&oe=62C931D4" >
+    </div>
+</section>
+        <!--end events--> 
+<!--contact-->  
+               <section  id="contact" class="contact">
+        <div class="title_contact"><h1>Contact-nous ! </h1></div>
+<div id="login">
+        <div class="box" >     
+        <form action="https://formspree.io/f/xqknvpbo" method="POST" >
+
+            <div class="name">
+             <i class="fas fa-user"></i>
+                <input type="text" placeholder="Name" id="name" required>
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" id="email" required>
+            </div>
+            <div class="message-box">
+                <i class='bx bxs-message'></i>
+                <textarea id="msg" cols="30" rows="5" 
+                  required>
+                </textarea>
+            </div>
+            <div class="button">
+                <button id="send">Send</button>
+            </div>      </form>
+    </div>
+   </div>
+<div class="info">
+    <div class="HR">
+        <h4><i class='bx bx-time-five'></i> Heures d'Ouverture :</h4>
+        <p> Lundi–Vendredi: 08h30-16h30</p><br>
+    </div> 
+<div class="mail">
+    <h3><i class='bx bx-envelope'></i> ccis@ccis-agadir.com</h3>
+</div> 
+<div class="tel">
+     <h3><i class='bx bx-phone-call'></i> 05.28.84.71.24 / 05.28.84.71.41</h3>
+     <h3><i class='bx bx-planet'></i> www.ccis-agadir.com </h3>
+    </div>
+    <div class="map">
+        <h3><i class='bx bx-map'></i>Av.Hassan 2 ,BP:240 ,80000 Agadir,Maroc</h3>
+        </div>
+            <div class="e_contact">
+<a href="https://www.facebook.com/ccissm/photos">
+    <i class='bx bxl-facebook-circle i1'>
+    </i>
+</a>
+<a href="http://www.ccis-agadir.com/index.php"><i class='bx bx-planet'></i></a>
+
+</div> 
+<div class="fix_icon">
+    <a href="#">
+    <i class='bx bx-up-arrow-alt'></i></a>
+</div> 
+</div>
+
+<!-- scriiipt contact-->
+<!--  end scriiipt contact-->
+
+    </section>
+</body>
+</html>
